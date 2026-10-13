@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>vw/vh/vmax/vmin相对单位</title>
+  <link rel="stylesheet" href="../../../styles/reset.css" />
+  <style>
+    header {
+      width: 100vw;
+      background-color: #ccc;
+    }
+    .title {
+      width: 50vw;
+      height: 50px;
+      background-color: #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="title"></div>
+  </header>
+  <script>
+    // vw/vh/vmax/vmin属于 相对单位,视口单位，可以用来布局，相对于视口
+    // 1vw=视口的1%
+    // 1vh=视口的1%
+    // 1vmax=视口宽高中较大的那个的1%
+    // 1vmin=视口宽高中较小的那个的1%
+    //示例中可以看出title是相对浏览器的50%，而不是header，这是和%不同的，%是相对于父元素
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../../../styles/reset.css" />
+  <title>%相对对单位</title>
+  <style>
+    header {
+      width: 90%;
+      height: 50px;
+      background-color: #ccc;
+    }
+
+    .title {
+      width: 50%;
+      height: 50px;
+      background-color: #f00;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="title"></div>
+  </header>
+  <script>
+    //百分号可以用来做布局,流式布局会用到
+    //百分号是相对于父元素的宽度
+    //这个例子中，header的宽度是90%，无论屏幕如何缩小，都不会出现出现滚动条
+    //header相对body的宽度是90%，title相对与header的宽度是50%
+  </script>
+</body>
+
+</html>

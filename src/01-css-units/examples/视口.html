@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="../../../styles/reset.css" />
+  <title>视口</title>
+</head>
+
+<body>
+  <script>
+    // 设置viewport的方式
+    //1：meta标签name为viewport
+    //2：width=device-width：视口宽度等于设备宽度，也可以写375这种固定，但是这是不合理的
+    //3：initial-scale=1.0：初始缩放比例，默认是1.0
+    //4：因为有兼容性问题，所以一般都写width=device-width, initial-scale=1.0
+    //4：user-scalable=no：禁止用户缩放
+    //5：获取可视视口宽度，不设置视口一般默认980
+    console.log(document.documentElement.clientWidth);
+    console.log(document.documentElement.getBoundingClientRect().width);
+    // 6：获取屏幕尺寸或者屏幕的分辨率，不建议用，因为不知道是屏幕尺寸还是屏幕的分辨率
+    console.log(window.screen.width);
+  </script>
+</body>
+
+</html>
