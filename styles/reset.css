@@ -15,5 +15,6 @@ li {
 }
 img {
   /* display: block; */
+  /* 图片铺满容器 */
   vertical-align: top;
 }
