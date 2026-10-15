@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex容器的属性</title>
+  <link rel="stylesheet" href="./css/basic.css">
+  <style>
+    .flex-container {
+      display: flex;
+    }
+
+    .flex-1 {
+      flex-flow: row nowrap;
+    }
+
+    .flex-2 {
+      flex-flow: row wrap;
+    }
+
+    .flex-3 {
+      flex-flow: row wrap-reverse;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="flex-container flex-1">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+    <div class="flex-item">7</div>
+  </div>
+
+  <div class="flex-container flex-2">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+    <div class="flex-item">7</div>
+  </div>
+
+  <div class="flex-container flex-3">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+    <div class="flex-item">5</div>
+    <div class="flex-item">6</div>
+    <div class="flex-item">7</div>
+  </div>
+
+
+
+  <img src="./images/flex.png" alt="flex" />
+
+</body>
+
+</html>

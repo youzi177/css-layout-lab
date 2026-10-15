@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Flex容器的属性</title>
+  <link rel="stylesheet" href="./css/basic.css">
+  <style>
+    .flex-container {
+      display: flex;
+    }
+
+    .flex-1 {
+      justify-content: flex-start;
+    }
+
+    .flex-2 {
+      justify-content: flex-end;
+    }
+
+    .flex-3 {
+      justify-content: center;
+    }
+
+    .flex-4 {
+      justify-content: space-between;
+    }
+
+    .flex-5 {
+      justify-content: space-around;
+    }
+
+    .flex-6 {
+      justify-content: space-evenly;
+    }
+  </style>
+</head>
+
+<body>
+  <p>默认值，向主轴起点对齐</p>
+  <div class="flex-container flex-1">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+  </div>
+  <p>向主轴终点对齐</p>
+  <div class="flex-container flex-2">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+  </div>
+  <p>在主轴上居中</p>
+  <div class="flex-container flex-3">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+  </div>
+  <p>首尾项目贴近两端，其余空间分布在项目之间</p>
+  <div class="flex-container flex-4">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+  </div>
+  <p>每个项目两侧分配相等空间，外侧间距为内部间距的一半</p>
+  <div class="flex-container flex-5">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+  </div>
+
+  <p> 所有相邻间距与两端间距相等</p>
+  <div class="flex-container flex-6">
+    <div class="flex-item">1</div>
+    <div class="flex-item">2</div>
+    <div class="flex-item">3</div>
+    <div class="flex-item">4</div>
+  </div>
+
+
+
+  <img src="./images/flex.png" alt="flex" />
+
+</body>
+
+</html>

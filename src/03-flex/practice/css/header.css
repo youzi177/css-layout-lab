@@ -1,0 +1,44 @@
+.header {
+  width: 100%;
+  height: 100%;
+  background-color: #fff;
+  padding: 0 20px;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  /* float: left; */
+  /* height: 100%; */
+  display: flex;
+  align-items: center;
+}
+
+.header-logo-img {
+  height: 30px;
+  /* 居中=48-9-9-30，总高度48，图30，上外边距9，下外边距刚好也是9 */
+  /* margin-top: 9px; */
+}
+
+.header-toggle {
+  /* float: right; */
+  padding: 10px;
+  background-color: transparent;
+  border: none;
+  border-radius: 4px;
+  /* margin-top: 4px; */
+}
+
+.header-toggle-bar {
+  display: block;
+  width: 24px;
+  height: 4px;
+  background-color: #363636;
+  border-radius: 2px;
+}
+
+.header-toggle-bar + .header-toggle-bar {
+  margin-top: 4px;
+}

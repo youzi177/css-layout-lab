@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>圣杯布局</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      display: flex;
+      flex-direction: column;
+      height: 100vh;
+
+    }
+
+    .header-layout,
+    .footer-layout {
+      height: 80px;
+      /* 不压缩 */
+      flex-shrink: 0;
+    }
+
+    .header-layout {
+      background-color: red;
+    }
+
+    .footer-layout {
+      background-color: yellow;
+    }
+
+    .body-layout {
+      flex-grow: 1;
+      display: flex;
+      overflow: auto;
+      min-height: 0;
+    }
+
+    .main-layout {
+      background-color: gray;
+      flex-grow: 1;
+
+      height: 2000px;
+    }
+
+    .nav-layout {
+      width: 20vw;
+      background-color: green;
+      order: -1;
+    }
+
+    .aside-layout {
+      width: 20vw;
+      background-color: lightblue;
+    }
+
+    .flex-center {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="header-layout flex-center">头部</header>
+  <div class="body-layout">
+    <main class="main-layout flex-center">主体</main>
+    <nav class="nav-layout flex-center">导航</nav>
+    <aside class="aside-layout flex-center">侧边栏</aside>
+  </div>
+  <footer class="footer-layout flex-center">底部</footer>
+</body>
+
+</html>
