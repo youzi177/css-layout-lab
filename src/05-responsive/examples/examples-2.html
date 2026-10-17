@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>媒体查询策略</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      padding: 0;
+      margin: 0;
+    }
+
+    body {
+      padding-top: 200px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .col {
+      background-color: aliceblue;
+      border: 1px solid aliceblue;
+    }
+
+    /* 无策略 */
+    /* @media(max-width: 576px) {
+      .col {
+        width: 100%;
+      }
+    }
+
+    @media(min-width: 576px)and (max-width: 768px) {
+      .col {
+        width: 50%;
+      }
+    }
+
+    @media(min-width: 768px)and (max-width: 992px) {
+      .col {
+        width: 25%;
+      }
+    }
+
+    @media(min-width: 992px)and (max-width: 1200px) {
+      .col {
+        width: 16.66667%;
+      }
+    }
+
+    @media(min-width: 1200px) {
+      .col {
+        width: 8.3333%;
+      }
+    } */
+
+    /* pc端优先 */
+    /* .col {
+      width: 8.3333%;
+    }
+
+    @media(max-width: 1200px) {
+      .col {
+        width: 16.66667%;
+      }
+    }
+
+    @media(max-width:992px) {
+      .col {
+        width: 25%;
+      }
+    }
+
+    @media(max-width:768px) {
+      .col {
+        width: 50%;
+      }
+    }
+
+    @media(max-width:576px) {
+      .col {
+        width: 100%;
+      }
+    }
+
+    @media(max-width:576px) {
+      .col {
+        width: 100%;
+      }
+    } */
+ /* 移动端优先 */
+    .col {
+      width: 100%;
+    }
+
+    @media(min-width: 576px) {
+      .col {
+        width: 50%;
+      }
+    }
+
+    @media(min-width: 768px) {
+      .col {
+        width: 25%;
+      }
+    }
+
+    @media(min-width: 992px) {
+      .col {
+        width: 16.66667%;
+      }
+    }
+
+    @media(min-width: 1200px) {
+      .col {
+        width: 8.3333%;
+      }
+    }
+ </style>
+</head>
+
+<body>
+  <div class="row">
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+    <div class="col">
+      <img src="./images/1.png" alt="">
+    </div>
+  </div>
+</body>
+
+</html>

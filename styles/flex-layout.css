@@ -1,4 +1,4 @@
-body{
+body {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -11,6 +11,21 @@ body{
   height: 48px;
   background-color: red;
   border-bottom: 1px solid #e8e8e8;
+  /* 这里要设置不压缩，height才是48px */
+  flex-shrink: 0;
+  position: relative;
+}
+.nav-layout {
+  overflow: hidden;
+  position: absolute;
+  top: 48px;
+  left: 0;
+  width: 100%;
+  height: 0;
+  transition: height 0.5s;
+}
+.nav-layout-extended {
+  height: 200px;
 }
 
 .main-layout {
@@ -39,4 +54,6 @@ body{
   height: 48px;
   background-color: yellow;
   box-shadow: 0 -4px 4px rgba(0, 0, 0, 0.15);
+  /* 这里要设置不压缩，height才是48px */
+  flex-shrink: 0;
 }
